@@ -8,11 +8,11 @@ public class TestP {
 
 			PersonTest obj = new PersonTest();
 
-			String[] arr = {"Peter"};
+			String[] arr = {};
 
 			String result = obj.PassArray(arr);
 
-			assertEquals("Peter is amazing",result);
+			assertEquals("You are amazing",result);
 
 		}
 	
