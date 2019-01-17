@@ -23,6 +23,13 @@ public class PersonTest {
 		        return a[0] + " IS AMAZING";
 		}
 		 
+		 else if(a.length == 2) 
+		 {
+
+				return a[0] + " and " + a[1] + " are amazing";
+
+			}
+		 
 		 
 		return "You are amazing";
 	}

@@ -16,4 +16,19 @@ public class TestP {
 
 		}
 	
+	
+	@Test
+
+	public void testtwoStringArray() {
+
+		      PersonTest obj = new PersonTest();
+
+			String[] arr = {"Peter","Jigisha"};
+
+			String result = obj.PassArray(arr);
+
+			assertEquals("Peter and Jigisha are amazing",result);
+
+		}
+	
 }
