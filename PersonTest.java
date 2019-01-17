@@ -30,6 +30,23 @@ public class PersonTest {
 
 			}
 		 
+		 else if(a.length > 2) 
+		 {
+			 String temp = "";
+			 
+			 for(int i=0; i < a.length-2; i++)
+		        {
+		            
+		          temp = temp +", " + a[i];
+
+			    }
+			 
+			    temp = temp +" and "+ a[a.length-1];
+
+				return temp + " are amazing";
+
+			}
+		 
 		 
 		return "You are amazing";
 	}
