@@ -33,26 +33,47 @@ public class PersonTest {
 		 else if(a.length > 2) 
 		 {
 			 String temp = "";
+			 String temp1 = "";
 			 
 			 for(int i=0; i < a.length-1; i++)
 		        {
 				 
-				 if (i == 0) 
-       		  {
-       	          temp = temp + a[i];
-       		  }
-				 else
-				 {
-					 temp = temp +", " + a[i];
-				 }
-         
-		          
+				 char[] charArray = a[i].toCharArray();
+			        
+			        for(int j=0; j < charArray.length; j++)
+			        {
+			            
+			            if( !Character.isUpperCase( charArray[i] ))
+			            {
+					      
+			            	 if (i == 0) 
+			          		  {
+			          	          temp = temp + a[i];
+			          		  }
+			   				 else
+			   				 {
+			   					 temp = temp +", " + a[i];
+			   				 }
+			            }
+			            
+			            else
+			            {
+			              
+			            	temp1 = temp1 +  charArray[i];
+			            	
+			            
+			            }
+			           
 
+			        }
+				
+         
+		 
 			    }
 			 
-			    temp = temp +" and "+ a[a.length-1];
+			    temp = temp +" and "+ a[a.length-1] + " are amazing";
 
-				return temp + " are amazing";
+				return temp + ". " + temp1 + " ALSO!.";
 
 			}
 		 

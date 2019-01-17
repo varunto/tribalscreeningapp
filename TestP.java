@@ -40,11 +40,11 @@ public class TestP {
 
 		      PersonTest obj = new PersonTest();
 
-			String[] arr = {"Peter","Jigisha","Varun"};
+			String[] arr = {"Peter","Jigisha","Varun","VARUN"};
 
 			String result = obj.PassArray(arr);
 
-			assertEquals("Peter, Jigisha and Varun are amazing",result);
+			assertEquals("Peter, Jigisha and Varun are amazing. VARUN ALSO!",result);
 
 		}
 	
